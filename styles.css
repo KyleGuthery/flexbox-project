@@ -1,10 +1,33 @@
 * {
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
-.hero,
+.header,
 footer {
   background-color: #1F2937;
+}
+
+.hero {
+  width: 75%;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.links,
+.header-logo {
+  color: #F9FAF8;
+  text-decoration: none;
+}
+
+.links {
+  font-size: .75em;
+  padding: 5px;
 }
 
 .hero-main {
@@ -20,5 +43,75 @@ footer {
 
 .header-logo {
   font-size: 24px;
-  color: #F9FAF8;
+  flex-grow: 3;
+}
+
+.random-info {
+  width: 66%;
+  margin: auto;
+}
+
+.random-img {
+  height: 125px;
+  width: 125px;
+  border-radius: 10px;
+  border: 3px solid #3882F6;
+}
+
+.random-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-seg {
+  display: flex;
+  flex-direction: column;
+  width: 125px;
+  font-size: .7em;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  color: white;
+  border-radius: 5px;
+  border: 2px solid white;
+  padding: .2em 1.2em;
+}
+
+button,
+.call-to-action {
+  background-color: #3882F6;
+}
+
+.call-to-action {
+  display: flex;
+  align-items: center;
+  height: 125px;
+  width: 75%;
+  margin: auto;
+  color: white;
+  margin-bottom: 5%;
+  border-radius: 10px;
+}
+
+.left-call {
+  flex-direction: column;
+  padding: 5%;
+}
+
+.right-call {
+  flex: 1;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 5%;
+  margin-bottom: auto;
+  padding: 5%;
+  font-size: .9em;
 }

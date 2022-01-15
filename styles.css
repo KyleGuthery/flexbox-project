@@ -44,11 +44,30 @@ nav {
 .header-logo {
   font-size: 24px;
   flex-grow: 3;
+  font-weight: 700;
+}
+.hero-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10% 0;
+}
+
+.hero-right img {
+  width: 400px;
+  height: auto;
 }
 
 .random-info {
   width: 66%;
-  margin: auto;
+  margin: 25px auto 100px auto;
+}
+
+.some-random {
+  font-weight: 700;
+  font-size: 32px;
+  padding: 1em;
+  text-align: center;
 }
 
 .random-img {
@@ -64,6 +83,10 @@ nav {
   align-items: center;
 }
 
+.random-images p {
+  padding-top: 5px;
+}
+
 .img-seg {
   display: flex;
   flex-direction: column;
@@ -76,8 +99,17 @@ nav {
 button {
   color: white;
   border-radius: 5px;
+  padding: .5em 2em;
+  border: none;
+  font-weight: bold;
+}
+
+.hero button {
+  margin-top: 1em;
+}
+
+.call-to-action button {
   border: 2px solid white;
-  padding: .2em 1.2em;
 }
 
 button,
@@ -90,19 +122,38 @@ button,
   align-items: center;
   height: 125px;
   width: 75%;
-  margin: auto;
+  margin: 100px auto;
   color: white;
-  margin-bottom: 5%;
   border-radius: 10px;
+  justify-content: space-between;
 }
 
 .left-call {
   flex-direction: column;
   padding: 5%;
+  flex-grow: 1;
 }
 
 .right-call {
   flex: 1;
+  flex-shrink: 1;
+}
+
+.quote {
+  background-color: #E5E7EB;
+  padding: 10% 20%;
+}
+
+.quote p {
+  font-size: 36px;
+  font-weight: 100;
+  color: #1F2937;
+}
+
+#attrib {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
 }
 
 footer {
@@ -111,7 +162,6 @@ footer {
   align-items: center;
   color: white;
   height: 5%;
-  margin-bottom: auto;
-  padding: 5%;
+  padding: 50px 0;
   font-size: .9em;
 }
